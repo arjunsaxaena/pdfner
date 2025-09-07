@@ -10,7 +10,7 @@ def extract_text_from_pdf(pdf_path):
 
 def extract_locations(text):
     nlp = spacy.load("en_core_web_trf") # or "en_core_web_sm" for lower accuracy
-    # Make sure to run - "python -m spacy download en_core_web_trf" or "python -m spacy download en_core_web_sm" to download the model"
+    # Make sure to run - "python -m spacy download en_core_web_trf" or "python -m spacy download en_core_web_sm" to download the model" (inside the .venv)
     doc = nlp(text)
 
     locations = set()
